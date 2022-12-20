@@ -3,8 +3,8 @@ title: "Oracle Linux 7.9 설치"
 layout: post
 ---
 
-가끔 테스트를 진행하다 보면 Oracle 데이터베이스를 설치해야 하는데 CentOS나 Ubuntu에도 설치는 가능하지만 
-설치 준비사항을 충족하는데 꽤 시간이 걸린다. Oracle 데이터베이스 단독 설치의 경우 Oracle Linux를 이용하면 편하게 준비를 할 수 있다.
+가끔 테스트를 진행하다 보면 Oracle 데이터베이스를 설치해야 하는데 CentOS나 Ubuntu에도 설치는 가능하지만 설치 준비사항을 충족하는데 꽤 시간이 걸린다. Oracle 데이터베이스 단독 설치의 경우 Oracle Linux를 이용하면 편하게 준비를 할 수 있다.
+
 
 # Oracle Linux 다운로드
 [Oracle Linux ISO Download](https://yum.oracle.com/oracle-linux-isos.html)에 접속하면 원하는 버전의 Full ISO를 
