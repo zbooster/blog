@@ -1,8 +1,6 @@
 ---
-layout: post
 title: "Oracle Linux 7.9 설치"
-subtitle: "Oracle Linux 7.9를 설치하는 방법"
-date: 2022-12-20 10:00:00 +0900
+layout: post
 ---
 
 가끔 테스트를 진행하다 보면 Oracle 데이터베이스를 설치해야 하는데 CentOS나 Ubuntu에도 설치는 가능하지만 
