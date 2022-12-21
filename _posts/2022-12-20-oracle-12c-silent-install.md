@@ -123,9 +123,11 @@ dbca -silent -createDatabase                   \
 -sampleSchema true
 ```
 명령을 수행하면 아래와 같이 SYS와 SYSTEM의 비밀번호를 어떻게 설정할것인지 물어본다. 너무 간단하게 만들면 화면과 같이 경고(Warning)문구가 뜬다. 필자는 테스트를 위한것이라서 기억하기 쉽게 지정했다.
+
 ![setup password](https://user-images.githubusercontent.com/100823210/208598713-d878c0ff-d44c-406f-921a-9e3c5006169b.png){: width="100%" height="100%"}
 
 설치가 완료되면 아래 화면과 같은 메시지를 확인할 수 있다.
+
 ![creation complete](https://user-images.githubusercontent.com/100823210/208600147-8ba04580-8f90-4a8c-9791-2718197dc18c.png){: width="100%" height="100%"}
 
 # 레퍼런스
