@@ -4,7 +4,9 @@ title: "사내 WireGuard VPN 구축하기"
 subtitle: ""
 date: 2023-01-28 15:00:00 +0900
 ---
-<img src='https://user-images.githubusercontent.com/100823210/215249301-1d4beb30-16ea-448d-814c-b66a6296f030.png' align='center'>
+<p align="center">
+  <img src='https://user-images.githubusercontent.com/100823210/215249301-1d4beb30-16ea-448d-814c-b66a6296f030.png'>
+</p>
 
 꼭 한달만에 다시쓰는 글이다. 최근 프로젝트에 나가있어 VPN으로 사내에 접속할 일이 많았는데 기존에 구축해놓았던 Softether VPN의 속도가 느려서 그 대안으로 찾아본 것이 WireGuard 이다.
 
