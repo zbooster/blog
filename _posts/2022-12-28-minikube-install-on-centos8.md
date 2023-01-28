@@ -46,8 +46,6 @@ kubectl get po -A
 ```
 ![minikube - pod](https://user-images.githubusercontent.com/100823210/209763344-fda901dc-a0c8-4bdf-b18e-df66b8d96105.png){: width="100%" height="100%"}
 
-**(작성중...)**
-
 # 레퍼런스
 - [minikube - 문서](https://minikube.sigs.k8s.io/docs/)
 
