@@ -4,7 +4,8 @@ title: "사내 WireGuard VPN 구축하기"
 subtitle: ""
 date: 2023-01-28 15:00:00 +0900
 ---
-![WireGaurd](https://user-images.githubusercontent.com/100823210/215249301-1d4beb30-16ea-448d-814c-b66a6296f030.png)
+![WireGaurd](https://user-images.githubusercontent.com/100823210/215249301-1d4beb30-16ea-448d-814c-b66a6296f030.png){: .align-center}
+
 꼭 한달만에 다시쓰는 글이다. 최근 프로젝트에 나가있어 VPN으로 사내에 접속할 일이 많았는데 기존에 구축해놓았던 Softether VPN의 속도가 느려서 그 대안으로 찾아본 것이 WireGuard 이다.
 
 
@@ -81,7 +82,7 @@ docker 이미지를 실행할 때, 입력했던 패스워드를 넣고 들어가
 
 이후 클라이언트를 실행하고 아래와 같은 화면이 나오면 Add Tunnel으 눌러 아까 다운로드 받은 conf 파일을 등록하면 된다. 그리고 Activate를 누르면 접속이 완료된다.
 
-![tempsnip](https://user-images.githubusercontent.com/100823210/215252524-ccbc77ad-89fe-4f67-8748-8bd1a273ab8c.png)
+![tempsnip](https://user-images.githubusercontent.com/100823210/215252524-ccbc77ad-89fe-4f67-8748-8bd1a273ab8c.png){: .align-center}
 
 # 설치 후기
 VPN을 WireGuard로 변경한 이후에 설치 스크립트 수행 시, 접속이 끊기는 부분은 완전히 사라졌다. 좀 더 테스트를 해보고 사내 다른 사용자들에게 전파할 예정이다.
