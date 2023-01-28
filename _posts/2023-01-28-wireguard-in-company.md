@@ -19,7 +19,7 @@ Softether를 구축하면서 편리했던 점은 설치가 쉽고 GUI로 관리�
 ### 2. WireGuard Easy의 발견
 사실 이 프로젝트의 발견이 결정적이였다. 이전에 테스트할때는 Linux에 명령을 수행해서 키를 만들고 설정파일을 만들어 배포하는 방식이 너무 번거롭다고 느껴졌는데 Docker 이미지만 실행하면 설치가 끝나고 신규 사용자를 등록하는 과정은 GUI로 실행하면 된다.
 
-# 설치과정
+# WireGaurd 
 기존에 사용하던 Docker 서버가 있다면 3번부터 하면 된다.
 
 ### 1. VM서버 준비
@@ -64,16 +64,29 @@ docker run -d \
 
 ### 5. 관리자 페이지 접속
 앞서 설정한 <도메인 이름>:51821에 접속하면 아래와 같이 GUI화면이 나온다. 만약 이 부분에서 실패한다면, 포트포워딩이나 DDNS 설정을 더 살펴봐야 한다. 
-![WGeasy - Admin](https://user-images.githubusercontent.com/100823210/215251734-ea5199c2-5fef-4667-89f9-80786369b21f.png){: width="100%" height="100%"}
 
-docker 이미지를 실행할 때, 입력했던 패스워드를 넣고 들어가면 Client를 추가할수 있는 화면이 나온다. 
-![WGeasy - New](https://user-images.githubusercontent.com/100823210/215251840-9425e41c-f57b-4068-a375-f41ec4beb33f.png){: width="100%" height="100%"}
+![wg-easy - Admin](https://user-images.githubusercontent.com/100823210/215251734-ea5199c2-5fef-4667-89f9-80786369b21f.png){: width="100%" height="100%"}
 
+docker 이미지를 실행할 때, 입력했던 패스워드를 넣고 들어가면 Client를 추가할수 있는 화면이 나온다. New나 New Client를 누르고 간단히 이름을 입력하면 클라이언트가 만들어진다. 
 
+![wg-easy - New Client](https://user-images.githubusercontent.com/100823210/215252005-564ce956-2c41-4047-a24a-6c60b8cb5d6e.png){: width="100%" height="100%"}
 
+만들어지면 우측에 아이콘이 생기는데 Windows에서 접속할 예정이므로 아래 화살표를 가진 아이콘을 클릭하면 conf 파일을 받는다.
+![image](https://user-images.githubusercontent.com/100823210/215252191-99192a44-0281-43e0-8e74-c75ff9f3f410.png){: width="100%" height="100%"}
 
+### 6. Windows 클라이언트 설치 및 접속
+다시 WireGaurt 홈페이지의 Installation 메뉴어 가면 Windows용 설치파일을 찾을 수 있다. 다운로드 받아 설치하면 된다.
 
+![image](https://user-images.githubusercontent.com/100823210/215252242-59ed0274-22ea-490f-86d3-7608cae64f27.png)
 
+이후 클라이언트를 실행하고 아래와 같은 화면이 나오면 Add Tunnel으 눌러 아까 다운로드 받은 conf 파일을 등록하면 된다. 그리고 Activate를 누르면 접속이 완료된다.
+
+![tempsnip](https://user-images.githubusercontent.com/100823210/215252524-ccbc77ad-89fe-4f67-8748-8bd1a273ab8c.png){: width="100%" height="100%"}
+
+# 설치 후기
+VPN을 WireGuard로 변경한 이후에 설치 스크립트 수행 시, 접속이 끊기는 부분은 완전히 사라졌다. 좀 더 테스트를 해보고 사내 다른 사용자들에게 전파할 예정이다.
+
+WireGaurd에 가장 큰 불만은 메뉴얼이 잘 되어있지 않아 설정하는 부분이 다소 어렵게 느껴진다는것이다. 홈페이지에 들어가서 Quick Start를 보면 나름 쉽게 설명한다고 동영상이나 커맨드를 써놓았지만, 처음 사용하는 사용자 입장에서는 더 혼란스러울 수 있다. 이 글이 입문자들에게 도움이 되었으면 좋겠다.
 
 # 레퍼런스
 - [WireGaurd 홈페이지](https://www.wireguard.com/)
